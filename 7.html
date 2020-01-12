@@ -1,7 +1,16 @@
 <html>
   <head>
-    <title>WEB1-Day5</title>
+    <title>WEB1-Day7</title>
     <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156059726-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156059726-1');
+    </script>
   </head>
   <body>
     <h1><a href="index.html">작심10일 코딩야학</a></h1>
@@ -12,9 +21,10 @@
       <li><a href="4.html">Day4</a></li>
       <li><a href="5.html">Day5</a></li>
       <li><a href="6.html">Day6</a></li>
-      <li><a href="7.html">Day7~</a></li>
+      <li><a href="7.html">Day7~10</a></li>
+      <li><a href="8.html">부록</a></li>
     </ol>
-    <h3>7일차</h3>
+    <h2>7일차</h2>
     1. 웹서버 운영: 언제 접속할 지 모르므로 컴퓨터가 늘 켜져있어야 함/ 웹서버라는 프로그램 설치/ 집 밖에서 인터넷을 통해 웹서버에 연결할 수 있게 조치 ...<br>
      => 이런 일을 대신 해주는 곳<br>
      인터넷이 연결되어 있는 컴퓨터 한 대 한 대를 host라고 함.웹서버를 운영하기 위한 컴퓨터.<br>
@@ -27,6 +37,100 @@
     7. hosting: 인터넷에 접속되어 있는 컴퓨터를 제공하는 사업<br>
     8. 목적이 웹이라면 web hosting / html파일만 서비스한다면 static web hosting<br>
     9. 검색: free static web hosting<br>
+
+    <h2>8일차</h2>
+    1. 내 컴퓨터에 웹서버를 설치해 누구나 내 컴퓨터의 웹페이지를 보도록 해 보자.<br>
+    2. 제대로 작동하는 이유는 한 가지지만, 작동하지 않는 이유는 수십가지가 넘는다.<br>
+    3. 하나의 문제를 해결하는 과정에서 수많은 지식과 보답을 얻게 된다.<br>
+    4. 웹서버 제품군: Apache, IIS, Nginx...<br>
+    5. 검색: how to install apache http server 운영체제<br>
+    6. 윈도우용 ; how to easy install apache on window -- Bitnami WAMP Stack<br>
+    6. mac ; bitnami mamp stack (mac apache(server) mysql(db) php(middleware))<br>
+    7. cmd+space>manager-osx>매니지먼트콘솔(apache관리도구)>manage servers> Start/Stop<br>
+    8. finder>applications>mampstack>apache2>htdocs>index.html<br>
+    9. http://127.0.0.1:8080/index.html<br>
+    127.0.0.1 ip address(인터넷에 연결돼있는 각각의 컴퓨터의 고유한 주소)<br>
+    8080 port(설치된 웹서버 구분)<br>
+    server가 browser에게 해당 파일을 보내면 browser가 파일에 저장된 코드를 해석해서 표시하는 방식<br>
+    10. file:///Applications/mampstack-7.3.13-0/apache2/htdocs/index.html<br>
+    파일이 위치한 경로로, 직접 index.html파일을 읽어서 화면에 표시하는 방식<br>
+    11. http: HyperText Transfer Protocol 웹페이지 전송을 위한 규약<br>
+    12. 서로 다른 컴퓨터에 설치된 웹서버의 특정 디렉토리에 설치된 index.html을 웹브라우저가 자신의 컴퓨터에서 보는 것처럼 보게 해보자.<br>
+    ==>ip address가 필요하다. http://serversip.index.html (단 두 대 모두 같은 네트워크에 연결돼있어야 함)<br>
+    (네트워크환경설정열기>고급>TCP/IP>IPv4주소)
+
+    <h2>9일차</h2>
+    1. 기술: 본질 / 혁신<br>
+    2. 학습: 교양 / 직업<br>
+    3. 만족감, 자신감, 기대감. 뇌를 이기는 장사는 없다. 오래 성장하는 힘.<br>
+    4. 공부한 것을 사용하는 것이 중요하다.<br>
+    5. 생각의 재료: 복잡함.<br>
+    checkbox.html<br>
+    checkbox1개 -> 2번의 테스트: 체크/null o,x<br>
+    checkbox2개 -> 4번의 테스트: xx, ox, xo, xx<br>
+    checkbox50개 -> 2^50번<br>
+    6. 개념을 알게 된다: 체크박스가 늘어난다<br>
+    7. 인류는 눈에 보이는 단순함을 조작해서 눈에 보이지 않는 엄청나게 복잡한 것을 만들어 낸다.<br>
+    8. 지금까지 배운 것을 사용해 보면서 한계에 직면하고 충분히 절망(불만족의 누적)하라.<br>
+
+    <h2>10일차</h2>
+    1. 정보의 효용은 최소한을 배워서 최대한으로 활용하는 것.<br>
+    web1: html, internet<br>
+    web2<br>
+    1) css: html이 태어난 지 4년 후. 웹사이트를 아름답게.<br>
+    2) java script: html이 태어난 지 5년 후. 사용자와 상호작용하는 웹사이트.<br>
+    3) back end: 하나의 파일로 일억개의 웹사이트를 바꾸는 생산성의 한계 극복.<br>
+              php, jsp, node.js의 익스프레스, 파이썬의 장고, 루비의 루비온레일즈, asp의 닷넷 등<br>
+    4) 광고
+
+    <h2>부록</h2>
+    1. 동영상 삽입<br>
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/7T7r_oSp0SE"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe><br>
+    2. 댓글 기능<br>
+    DISQUS,LiveRe..<br>
+    disqus>install disqus on my site>create a new site>code 붙여넣기(웹서버를 통한 주소에서 이용)<br>
+    127.0.0.1:8080/index.html<br>
+    <div id="disqus_thread"></div>
+    <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-zpk56p6ry6.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><br>
+    3. 채팅 기능<br>
+    www.tawk.to<br>
+    admin(설정)>widget code 복붙<br>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5e1ae8317e39ea1242a4353c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script--><br>
+    4. 방문자 분석기<br>
+    구글 analytics<br>
+    추적코드(tracking code)>global site tag를 head태그마다 복붙<br>
 
   </body>
 </html>
